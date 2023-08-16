@@ -12,8 +12,8 @@
   - [🛠 Built With ](#-built-with-)
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
+  - [ BackEnd-app](#BackEnd-repo)
   - [💻 Getting Started ](#-getting-started-)
-  - [ Video Presentation](#video)
     - [Prerequisites](#prerequisites)
     - [Setup](#setup)
     - [Usage](#usage)
@@ -37,11 +37,6 @@
 - JavaScript
 - React/Redux
 
-
-### Repo to BackEnd
-
-<!-- Features -->
-
 ### Key Features <a name="key-features"></a>
 
 - [ ] **Documentation**
@@ -49,7 +44,10 @@
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- LIVE DEMO -->
+## BackEnd App <a name="BackEnd-app"></a>
+
+- [BackEnd App](https://github.com/joyapisi/hello-rails-back-end/pull/1)
+- [BackEnd API](http://127.0.0.1:3000/api/greetings/random_greeting)
 
 <!-- GETTING STARTED -->
 
