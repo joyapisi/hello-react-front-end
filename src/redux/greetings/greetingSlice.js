@@ -1,6 +1,6 @@
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
 
-const baseUrl = 'http://127.0.0.1:3000/messages';
+const baseUrl = 'http://127.0.0.1:3000/api/greetings/random_greeting';
 
 const initialState = {
   greetings: [],
@@ -23,17 +23,17 @@ const greetingSlice = createSlice({
   reducers: {},
   extraReducers(builder) {
     builder
-      .addCase(fetchGreetings.pending, (state) => {
-        state.isLoading = true;
-      })
+      // .addCase(fetchGreetings.pending, (state) => {
+      //   state.isLoading = true;
+      // })
       .addCase(fetchGreetings.fulfilled, (state, action) => {
         state.greetings = action.payload;
         state.isLoading = false;
-      })
-      .addCase(fetchGreetings.rejected, (state, action) => {
-        state.error = action.error.message;
-        state.isLoading = false;
       });
+    // .addCase(fetchGreetings.rejected, (state, action) => {
+    //   state.error = action.error.message;
+    //   state.isLoading = false;
+    // });
   },
 });
 
