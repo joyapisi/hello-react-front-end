@@ -1,6 +1,6 @@
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
 
-const base_url = 'http://127.0.0.1:3000/messages';
+const baseUrl = 'http://127.0.0.1:3000/messages';
 
 const initialState = {
   greetings: [],
@@ -11,7 +11,7 @@ const initialState = {
 export const fetchGreetings = createAsyncThunk(
   'greetings/fetchGreetings',
   async () => {
-    const response = await fetch(base_url);
+    const response = await fetch(baseUrl);
     const data = await response.json();
     return data;
   },
